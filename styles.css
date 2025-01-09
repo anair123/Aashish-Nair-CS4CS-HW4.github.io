@@ -1,0 +1,170 @@
+h2{
+    font-family: Arial;
+    font-size: 36px;
+    text-align: center;
+}
+
+h3{
+
+    font-family: Arial;
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    padding-left: 24.2%; /*Place header on top of border*/
+}
+
+.info-header{
+    width: 100%;
+}
+
+.personal-info{
+    display: flex;
+    justify-content: center; /*columns are spaced apart; left on left, right on right*/
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    border: 2px solid black;
+    
+    width: 50%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column label{
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+
+
+.form-column input{
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+
+.divider{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.line{
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.question{
+    font-size: 24px;
+    padding-left: 24.2%;
+    font-family: Arial;
+    margin-bottom: 20px;
+
+}
+
+/*First Question*/
+
+.heard-from{ /*I heard this graduate program from:*/
+    display: flex;
+    font-style: Arial;
+    justify-content: center;
+    
+}
+
+
+.q1-checkbox{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+/*Second Question*/
+.q2-checkbox{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-left: 24.2%;
+    
+}
+
+.options-list{
+    list-style: none; /*Remove default numbers*/
+    align-items: center;
+    padding-left: 24.2%;
+    margin: 10px;
+}
+
+.option-item{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.email{
+    font-size: 24px;
+    padding-left: 24.2%;
+    font-family: Arial;
+    margin-bottom: 20px;
+
+}
+
+button{
+    font-size: 24px;
+    margin-left: 24.2%;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+li{
+    margin-right: 27.5%;
+}
+
+
+/*change the size of the input boxes*/
+#i-am-from{
+    width: 170px;
+    height: 30px;
+}
+
+#program{
+    width: 170px;
+    height: 30px;
+}
+#started-in{
+    width: 170px;
+    height: 20px;
+}
+
+
+#feedback{
+    font-size: 20px;
+    padding-left: 24.2%;
+    margin-right: 22%;
+
+
+}

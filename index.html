@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashish Nair Homework 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Welcome to My Homepage</h2>
+    <br>
+    
+    
+    <div class="info-header">
+        <h3>Personal Info</h3>
+    </div>
+    <form class="personal-info">
+        
+        <div class="form-container">
+            
+            <div class="form-column">
+                <div>
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname">
+    
+                </div>
+                
+                <div>
+                    <label for="m-initial">M Initial:</label>
+                    <input type="text" id="m-initial">
+                </div>
+                
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname">
+                </div>
+                
+                <div>
+                    <label for="i-am-from">I am From:</label>
+                    <select name="i-am-from" id="i-am-from">
+                        <option value="">India</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="form-column">
+    
+                <div>
+                    <label for="matriculation">Matriculation:</label>
+                    <input type="text" id="matriculation" name="matriculation">
+                    <br><span id="matriculation-error"></span> <!--add error message in javascript-->
+                </div>
+                
+                <div>
+                    <label for="semester">Semester:</label>
+                    <input type="text"  id="semester">
+                </div>
+                
+                <div>
+                    <label for="program">Program:</label>
+                    <select name="program" id="program">
+                        <option value="">M.S. Computer Science (AI)</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="started-in">Started In:</label>
+                    <input type="date" id="started-in">
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
+
+    </form>
+    
+    <!--Horizontal line-->
+
+    <div class="divider">
+        <hr class="line">
+        <span class="circle"></span>
+        <h class="line">
+    </div>
+    <h4 class="question">I heard this graduate program from:</h4>
+    <form class="heard-from">
+        
+        <div class="q1-checkbox">
+            <input type="checkbox" id="Media" name="Media">
+            <label for="Media">Media</label>
+        </div>
+        
+
+        <div class="q1-checkbox">
+            <input type="checkbox" id="Add" name="Add">
+            <label for="Add">Add</label>        
+        </div>
+
+
+        <div class="q1-checkbox">
+            <input type="checkbox" id="Agency" name="Agency">
+            <label for="Agency">Agency</label>
+    
+        </div>
+
+
+        <div class="q1-checkbox">
+            <input type="checkbox" name="Other" id="Other">
+            <label for="Other">Other</label>            
+        </div>
+    </form>
+
+    <h4 class="question">When I finish my study, I will:</h4>
+    <form class="after-studies">
+        <div class="q2-checkbox">
+            <input type="radio" id="return-to-country" name="after-studies">
+            <label for="return-to-country">return to my country</label>
+        </div>
+        <div class="q2-checkbox">
+            <input type="radio" id="find-job" name="after-studies">
+            <label for="find-job">find a job in Europe</label>
+        </div>
+
+        <div class="q2-checkbox">
+            <input type="radio" id="practical-training" name="after-studies">
+            <label for="practical-training">do the practical training and then decide</label>
+        </div>
+    </form>
+
+    <div class="divider">
+        <hr class="line">
+        <span class="circle"></span>
+        <h class="line">
+    </div>
+
+    <h4 class="question">Feedback for the Course:</h4>
+    <p id="feedback">The program was straightforward and provided a solid foundation in software development principles. The professor evidently had a strong background in the subject and was able to answer specific questions from the students. He also wrote programs from scratch to illustrate certain points, which made the topics easier to understand. I would suggest that the course could be enhanced in a few ways. Firstly, since the course was conducted online, I found it difficult sometimes to follow along. Holding classes offline could help make the material easier to grasp. Also, since the students in the course are pursuing a degree in artificial intelligence and cybersecurity, it would be beneficial for the course to provide examples of what role software development plays in these fields. Lastly, I noticed that time and space complexity were not a part of the syllabus. I think the program would benefit from including these topics in the future. </p>
+
+    <h4 class="question">I will write a paragraph for each methodology of  <a href="https://en.wikipedia.org/wiki/Software_development_process">SDLC</a>. There are many of <br>them but I will suggest a few. My suggestion and reasons are as follows.</h4>
+    <ol class="options-list">
+        <li class="option-item">A) The Waterfall model is a model that comprises 6 steps: requirements, design, implementation, test, installation, and maintanence. The requirements phase defines the needed information, the design phase defines the algorithms and software architecture, the implementation phase entails writing the source code, the testing phase entails performing testing, the installation phase entails deployment, and the maintainance phase entails maintaining the system. It is not complex and is suited for inexperienced staff.  This model is useful when the requirements are well known and the product definition is stable. </li>
+        <li class="option-item">B) The V-Shaped model is a variation of the waterfall model in which the development and testing are performed parrelelly. It is easy to use and focuses on verification and validation in the early stages. However, it does not handle dynamic changes in requirements in well.  This model is suited for systems needing high reliabilty. </li>
+        <li class="option-item">C) The Structured Evolutionary Prototyping model entails building prototypes continuously until one reaches the standards of the final product. It begins with developing a prototype based oon a high-level paper model. The designer shows the prototype and modifies it based on the user feedback. The designer continues building prototypes until the users are satisfied. This model allows constant feedback from customers. Thus, the model is suited for short-lived demonstrations and the requirements classification stage of a waterfall model. </li>
+        <li class="option-item">D) The Rapid Application Development (RAD) model comprises 4 steps: requirement planning phase, user description phase, construction phase, and cutover phase. This model uses a time-box approach to improve speed and productivity.  The RAD model is suited for projects that can be time-boxed.</li>
+        <li class="option-item">E) The Incremental model entails constructing a partial implementation of a total system and adding functionalities until the final product is ready. This model allows a faster initial product delivery, with all the major functions being priotized. </li>
+        <li class="option-item">F) The spiral model entails performing 4 phases (or quadrant) iteratively. The first quadrant is about determining objectives and constraints. The second quadrant is about identifying and resolving risk. The third quadrant focuses on developing the product, which includes creating designs and developing code. The final phase is for planning the next phase, including project and test plans. This model puts a lot of emphasis on risk assessment. It also allows frequent user feedback. Thus, it is ideal for projects that are high risk or are subject to changes.</li>
+        <li class="option-item">G) The Extreme Programming (XP) model entails small teams building software with everchanging requirements. The model emphasises the use of code to complete deliverables and communicate among teammates. The model enforces pair programming, where two programmers write production code in one machine.</li>
+        <li class="option-item">I) The Scrum methodology conducts software development in stages of development called sprints. Each sprint is dedicated to bringing the team closer to their goal. This methodology has teams starting every day with a short meeting, in which the team can evaluate its progress. This methodology is suited for fast-pace environments and allows teams to modify requirements throughout the project. </li>
+
+    </ol>
+
+    <h4 class="question">Among so many SDLC methodologies, the ones that are in the AGILE classification<br> are better. Among AGILE SDLC Methods, I have also a few suggestions.</h4>
+    <ol class="options-list">
+        <li class="option-item">A) The Extreme Programming (XP) model entails small teams building software with everchanging requirements. The model emphasises the use of code to complete deliverables and communicate among teammates. The model enforces pair programming, where two programmers write production code in one machine.</li>
+        <li class="option-item">B) The Scrum methodology conducts software development in stages of development called sprints. Each sprint is dedicated to bringing the team closer to their goal. This methodology has teams starting every day with a short meeting, in which the team can evaluate its progress. This methodology is suited for fast-pace environments and allows teams to modify requirements throughout the project.</li>
+        <li class="option-item">C) The Kanban methodology allows teams to track their tasks by visualizing their project with a Kanban board. The board separates tasks under three columns: "to do", "doing", and "done." The methodology is ideal for teams that work with changing requirements and seek a fast product delivery. </li>
+        <li class="option-item">D) The Crystal methodology focus on individuals rather than processes and tools. This is one of the more flexible methodoligies since it allows teams the freedom to work as they see fit. This is more suited for teams working on short-term projects in a single workspace.</li>
+
+        
+    </ol>
+
+    <h4 class="question">In this software development and application course of <a href="https://www.srh-university.de/en/">SRH</a> we learned <br>the following:</h4>
+    <ol class="options-list">
+        <li class="option-item">A) We learnt the syntax of C and its components, including variables, data types, control structures, and functions.</li>
+        <li class="option-item">B) We learnt the different software development methodologies that businesses use to build software, including their advantages and disadvantages.</li>
+        <li class="option-item">C) We learnt about various advanced data structures, such as linked lists, that can be used to allocate memory dynamically.</li>
+        <li class="option-item">D) We learnt the basic tools used in front-end development, including HTML, CSS, and Javascript.</li>
+    </ol>
+
+    <h4 class="question">I have used <a href="https://www.w3schools.com/css/">CSS</a> in this webpage and there are 3 ways to include css in a<br> webpage as follows.</h4>
+    <ol class="options-list">
+        <li class="option-item">A) CSS can be integrated with in text styling. This entails using the style attribute in a given HTML tag (e.g., p tag) and assigning values to the css attributes (e.g., font-size).</li>
+        <li class="option-item">B) CSS can be added with internal CSS, which entails using the style tag inside the head tag of the HTML file.</li>
+        <li class="option-item">C) CSS can be added using external CSS, which entails creating a seperate .css file that contails all css content and linking it to the original HTML file. </li>
+    </ol>
+
+    <h4 class="question">The reasons CSS is used in a webpage are:</h4>
+    <ol class="options-list">
+        <li class="option-item">1. CSS improves the the design and appeal of the webpage with its styling options.</li>
+        <li class="option-item">2. CSS enables responsive features (e.g., hover animation) that can improve user experience. </li>
+        <li class="option-item">3. CSS allows webpage designs to cater to different screens (e.g., phone, computer)</li>
+    </ol>
+
+    <h4 class="question">We also use <a href="https://www.w3schools.com/js/default.asp">JavaScript</a> in webpage development. The main reasons are<br> as follows:</h4>
+    <ol class="options-list">
+        <li class="option-item">a) Javascript can carry out validation of the entered fields to make sure they meet the requirements. </li>
+        <li class="option-item">b) Javascript processes inputed data (e.g., name) for subsequent processes</li>
+        <li class="option-item">c) Javascript creates features that improve the overall user experience</li>
+        <li class="option-item">d) Javascript can perform validation of inputs dynamically (i.e., when the user is typing)</li>
+        <li class="option-item">e) Javascript allows user inputs, such as documents or images.</li>
+        <li class="option-item">f) Javascript can tailor subsequent questions based on responses to previous questions.</li>
+    </ol>
+
+    <h4 class="question">I've done this project myself and accept the consequences if found other ways.</h4>
+    
+    <div class="email">
+        <label for="email">You can reach me at:</label>
+        <input type="email" id="email" name="email">
+        <span id="email-error"></span> <!--Add text if there is an error-->
+    </div>
+
+    <!--submit button -->
+
+    <button type="submit" id="submit-button">Submit</button>
+
+    <script src="index.js"></script>
+
+<!--
+   
+
+    
+
+    
+
+
+
+   
+
+
+
+-->
+    
+</body>
+</html>
