@@ -45,7 +45,7 @@ document.getElementById('submit-button').addEventListener('click', function(even
 
     // submit the form if there are no issues
     if (emailError.textContent=="" && matriculationError.textContent==""){
-        alert("Submitting form...");
+        alert("Submitted form");
     }
 
 
